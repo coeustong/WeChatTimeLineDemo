@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Const.h"
 #import "ViewController.h"
 
 
@@ -16,6 +16,7 @@
 #define NavBarBgColor [UIColor colorWithRed:24/255.0 green:30/255.0 blue:43/255.0 alpha:1.0]
 #define NavBarFgColor [UIColor whiteColor]
 #define NavTextAttribute @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}
+
 
 
 
@@ -33,6 +34,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
     _controller = [[ViewController alloc] init];
     
     _userTimelineController = [[UserTimelineViewController alloc] init];
@@ -40,11 +44,12 @@
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:_controller];
     
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.rootViewController = nav;
-    _window.backgroundColor = [UIColor whiteColor];
     
-    [_window makeKeyAndVisible];
+    //self.window=[[UIWindow alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    self.window.rootViewController = nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
     
     
     application.statusBarStyle = UIStatusBarStyleLightContent;

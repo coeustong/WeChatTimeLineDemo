@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "Const.h"
 #import "DFTextImageLineItem.h"
-
+#import "DFTextVideoLineItem.h"
 
 #import "DFLineLikeItem.h"
 #import "DFLineCommentItem.h"
@@ -27,6 +27,8 @@
 {
     self = [super init];
     if (self) {
+        //self.view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        //NSLog(@"screen width:%f,screen height:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
     }
     return self;
 }
@@ -47,26 +49,41 @@
     NSString *coverUrl = [NSString stringWithFormat:@"http://file-cdn.datafans.net/temp/12.jpg_%dx%d.jpeg", (int)self.coverWidth, (int)self.coverHeight];
     [self setCover:coverUrl];
     
-    NSString *avatarUrl = [NSString stringWithFormat:@"http://file-cdn.datafans.net/avatar/1.jpeg_%dx%d.jpeg", (int)self.userAvatarSize, (int)self.userAvatarSize];
+    //NSString *avatarUrl = [NSString stringWithFormat:@"http://file-cdn.datafans.net/avatar/1.jpeg_%dx%d.jpeg", (int)self.userAvatarSize, (int)self.userAvatarSize];
+    NSString *avatarUrl=@"http://pic.chinaxinge.com/xinge/PHOTO/upload/shopimg/big/20090308193042.jpg";
     [self setUserAvatar:avatarUrl];
     
-    [self setUserNick:@"Allen"];
+    [self setUserNick:@"汤臣"];
     
-    [self setUserSign:@"梦想还是要有的 万一实现了呢"];
+    [self setUserSign:@"灵魂若变卖了 上链也没心跳"];
     
 }
 
 
 -(void) initData
 {
+    DFTextVideoLineItem *textVedioItem=[[DFTextVideoLineItem alloc]init];
+    textVedioItem.itemId=2222;
+    textVedioItem.itemType=LineItemTypeTextVideo;
+    textVedioItem.userId=66666;
+    textVedioItem.userAvatar = @"http://pic.chinaxinge.com/xinge/PHOTO/upload/shopimg/big/20090308193042.jpg";
+    textVedioItem.userNick = @"汤臣";
+    textVedioItem.title = @"";
+    textVedioItem.text = @"!!!!";
+    textVedioItem.videoUrl=@"http://static.tripbe.com/videofiles/20121214/9533522808.f4v.mp4";
+    textVedioItem.ts = [[NSDate date] timeIntervalSince1970]*1000;
+    textVedioItem.location = @"广州 • 大学城";
+    [self addItem:textVedioItem];
+    
+    
     DFTextImageLineItem *textImageItem = [[DFTextImageLineItem alloc] init];
     textImageItem.itemId = 1;
     textImageItem.itemType = LineItemTypeTextImage;
     textImageItem.userId = 10086;
     textImageItem.userAvatar = @"http://file-cdn.datafans.net/avatar/1.jpeg";
-    textImageItem.userNick = @"Allen";
+    textImageItem.userNick = @"奥巴马";
     textImageItem.title = @"";
-    textImageItem.text = @"你是我的小苹果 小苹果 我爱你 就像老鼠爱大米 18680551720 [亲亲]";
+    textImageItem.text = @"突袭ISIS";
     
     NSMutableArray *srcImages = [NSMutableArray array];
     [srcImages addObject:@"http://file-cdn.datafans.net/temp/11.jpg"];
@@ -96,7 +113,7 @@
     [thumbImages addObject:@"http://file-cdn.datafans.net/temp/19.jpg_160x160.jpeg"];
     textImageItem.thumbImages = thumbImages;
     
-    textImageItem.location = @"中国 • 广州";
+    textImageItem.location = @"ISIS总部";
     textImageItem.ts = [[NSDate date] timeIntervalSince1970]*1000;
     
     

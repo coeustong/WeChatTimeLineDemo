@@ -51,8 +51,11 @@
 		11F07FC21BCFA84C0084DAA3 /* DFTextImageUserLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F07FC11BCFA84C0084DAA3 /* DFTextImageUserLineItem.m */; };
 		11F07FC51BCFA8BF0084DAA3 /* DFTextImageUserLineCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F07FC41BCFA8BF0084DAA3 /* DFTextImageUserLineCellAdapter.m */; };
 		11F07FC81BCFA98E0084DAA3 /* DFUserLineCellAdapterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F07FC71BCFA98E0084DAA3 /* DFUserLineCellAdapterManager.m */; };
+		CB2F50B01C003B8E00CB8BF7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2F50AF1C003B8E00CB8BF7 /* Launch Screen.storyboard */; };
+		CB2F50B21C003C3200CB8BF7 /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB2F50B11C003C3200CB8BF7 /* LaunchScreen.jpg */; };
 		CBB53A4D1BF5CCF500156912 /* DFTextVideoLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB53A4C1BF5CCF500156912 /* DFTextVideoLineCell.m */; };
 		CBB53A501BF5CEDF00156912 /* DFTextVideoLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB53A4F1BF5CEDF00156912 /* DFTextVideoLineItem.m */; };
+		CBB53A531BF60A7000156912 /* DFTextVideoLineCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB53A521BF60A7000156912 /* DFTextVideoLineCellAdapter.m */; };
 		FDBBC1BA891E2AED5A17C223 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7388AAC42C4B4A3183F925 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -136,10 +139,14 @@
 		11F07FC71BCFA98E0084DAA3 /* DFUserLineCellAdapterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUserLineCellAdapterManager.m; sourceTree = "<group>"; };
 		22443A8775E23D18891FEAC9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A2A89A39EA353891C22903B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB2F50AF1C003B8E00CB8BF7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CB2F50B11C003C3200CB8BF7 /* LaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreen.jpg; sourceTree = "<group>"; };
 		CBB53A4B1BF5CCF500156912 /* DFTextVideoLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTextVideoLineCell.h; sourceTree = "<group>"; };
 		CBB53A4C1BF5CCF500156912 /* DFTextVideoLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTextVideoLineCell.m; sourceTree = "<group>"; };
 		CBB53A4E1BF5CEDF00156912 /* DFTextVideoLineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTextVideoLineItem.h; sourceTree = "<group>"; };
 		CBB53A4F1BF5CEDF00156912 /* DFTextVideoLineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTextVideoLineItem.m; sourceTree = "<group>"; };
+		CBB53A511BF60A7000156912 /* DFTextVideoLineCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTextVideoLineCellAdapter.h; sourceTree = "<group>"; };
+		CBB53A521BF60A7000156912 /* DFTextVideoLineCellAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTextVideoLineCellAdapter.m; sourceTree = "<group>"; };
 		DA7388AAC42C4B4A3183F925 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +198,8 @@
 				11D7582B1BB7D43B00F554D7 /* ViewController.m */,
 				11F07F991BCF95E40084DAA3 /* UserTimelineViewController.h */,
 				11F07F9A1BCF95E40084DAA3 /* UserTimelineViewController.m */,
+				CB2F50AF1C003B8E00CB8BF7 /* Launch Screen.storyboard */,
+				CB2F50B11C003C3200CB8BF7 /* LaunchScreen.jpg */,
 				11D758301BB7D43B00F554D7 /* Images.xcassets */,
 				11D758231BB7D43B00F554D7 /* Supporting Files */,
 				11D7584E1BB7D69700F554D7 /* prefix.pch */,
@@ -365,6 +374,8 @@
 				11F07FA71BCFA42D0084DAA3 /* DFLineCellAdapterManager.m */,
 				11F07FA81BCFA42D0084DAA3 /* DFTextImageLineCellAdapter.h */,
 				11F07FA91BCFA42D0084DAA3 /* DFTextImageLineCellAdapter.m */,
+				CBB53A511BF60A7000156912 /* DFTextVideoLineCellAdapter.h */,
+				CBB53A521BF60A7000156912 /* DFTextVideoLineCellAdapter.m */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -475,8 +486,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D758EE1BB8E6C300F554D7 /* Like@2x.png in Resources */,
+				CB2F50B21C003C3200CB8BF7 /* LaunchScreen.jpg in Resources */,
 				11D758EA1BB8E6C300F554D7 /* AlbumOperateMore@2x.png in Resources */,
 				11D7590B1BBACC2700F554D7 /* AlbumComment@2x.png in Resources */,
+				CB2F50B01C003B8E00CB8BF7 /* Launch Screen.storyboard in Resources */,
 				11D758311BB7D43B00F554D7 /* Images.xcassets in Resources */,
 				11D7590E1BBACC2700F554D7 /* AlbumLike@3x.png in Resources */,
 				11D7590F1BBACC2700F554D7 /* AlbumOperateMoreViewBkg@2x.png in Resources */,
@@ -566,6 +579,7 @@
 				11E157981BC0293900F2F99A /* DFFaceManager.m in Sources */,
 				11D758FB1BBA8C4C00F554D7 /* DFLineLikeItem.m in Sources */,
 				CBB53A4D1BF5CCF500156912 /* DFTextVideoLineCell.m in Sources */,
+				CBB53A531BF60A7000156912 /* DFTextVideoLineCellAdapter.m in Sources */,
 				11F07F951BCF93970084DAA3 /* DFUserTimeLineViewController.m in Sources */,
 				110D424D1BCF54CA00081824 /* MLClickColorLinkLabel.m in Sources */,
 				11D759051BBAC8DD00F554D7 /* DFLikeCommentToolbar.m in Sources */,
@@ -602,7 +616,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hans Captain (5G22NMERB3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hans Captain (5G22NMERB3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -626,7 +640,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "0bc4ff2d-6145-475f-96e6-e4eabc19eed7";
+				PROVISIONING_PROFILE = "08acfb20-1495-4cf4-a072-f8faca37f9b2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -649,7 +663,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hans Captain (5G22NMERB3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hans Captain (5G22NMERB3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
@@ -666,7 +680,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "0bc4ff2d-6145-475f-96e6-e4eabc19eed7";
+				PROVISIONING_PROFILE = "08acfb20-1495-4cf4-a072-f8faca37f9b2";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -678,14 +692,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hans Captain (5G22NMERB3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = DFTimelineView/prefix.pch;
 				INFOPLIST_FILE = DFTimelineView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.datafans.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0bc4ff2d-6145-475f-96e6-e4eabc19eed7";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -695,14 +710,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hans Captain (5G22NMERB3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = DFTimelineView/prefix.pch;
 				INFOPLIST_FILE = DFTimelineView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.datafans.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0bc4ff2d-6145-475f-96e6-e4eabc19eed7";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

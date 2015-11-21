@@ -11,10 +11,8 @@
 @interface DFTextVideoLineItem : DFBaseLineItem
 
 @property (nonatomic, strong) NSString *text;
-@property (nonatomic, strong) NSMutableArray *thumbImages;
-@property (nonatomic, strong) NSMutableArray *srcImages;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
+
+@property(nonatomic,strong)NSString *videoUrl;
 
 @property (nonatomic, strong) NSAttributedString *attrText;
 

@@ -8,8 +8,10 @@
 
 #import "DFBaseLineCell.h"
 #import "DFBaseLineItem.h"
+#import "MHGallery.h"
+#import "MHMediaPreviewCollectionViewCell.h"
 
-@interface DFTextVideoLineCell : DFBaseLineCell
+@interface DFTextVideoLineCell : DFBaseLineCell<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,MHGalleryDataSource,MHGalleryDelegate>
 
 +(CGFloat) getCellHeight:(DFBaseLineItem *) item;
 

@@ -13,12 +13,12 @@
 -(CGFloat)getCellHeight:(DFBaseLineItem *)item
 {
     if (item.cellHeight != 0) {
-        NSLog(@"直接获取高度 %f", item.cellHeight);
+        //NSLog(@"直接获取高度 %f", item.cellHeight);
         return item.cellHeight;
     }
     CGFloat height = [self getCellHeightByCount:item];
     item.cellHeight = height;
-    NSLog(@"计算获取高度 %f", item.cellHeight);
+    //NSLog(@"计算获取高度 %f", item.cellHeight);
     
     return height;
 }

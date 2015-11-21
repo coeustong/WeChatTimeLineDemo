@@ -14,11 +14,10 @@
     self = [super init];
     if (self) {
         
-        self.itemType = LineItemTypeTextImage;
-        
+        self.itemType = LineItemTypeTextVideo;
+        _videoUrl=@"";
         _text = @"";
-        _thumbImages = [NSMutableArray array];
-        _srcImages = [NSMutableArray array];
+        
     }
     return self;
 }

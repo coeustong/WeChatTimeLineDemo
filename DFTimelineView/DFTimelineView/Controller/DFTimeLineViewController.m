@@ -8,7 +8,7 @@
 
 #import "DFTimeLineViewController.h"
 #import "DFLineCellAdapterManager.h"
-
+#import "DFTextVideoLineCellAdapter.h"
 #import "DFTextImageLineCellAdapter.h"
 #import "DFBaseLineCell.h"
 #import "DFLineLikeItem.h"
@@ -58,7 +58,12 @@
         DFLineCellAdapterManager *manager = [DFLineCellAdapterManager sharedInstance];
         
         DFTextImageLineCellAdapter *textImageCellAdapter = [[DFTextImageLineCellAdapter alloc] init];
+        
+        DFTextVideoLineCellAdapter *textVedioCellAdapter=[[DFTextVideoLineCellAdapter alloc]init];
+        
         [manager registerAdapter:LineItemTypeTextImage adapter:textImageCellAdapter];
+        
+        [manager registerAdapter:LineItemTypeTextVideo adapter:textVedioCellAdapter];
         
     }
     return self;
